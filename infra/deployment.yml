@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chinaski
+  labels:
+    app: chinaski
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chinaski
+  template:
+    metadata:
+      labels:
+        app: chinaski
+    spec:
+      containers:
+      - name: chinaski-container
+        image: chinaski:1.0
+        ports:
+        - containerPort: 8080
