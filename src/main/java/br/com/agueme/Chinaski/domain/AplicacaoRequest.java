@@ -8,4 +8,6 @@ import lombok.Setter;
 public class AplicacaoRequest {
     private String nome;
     private String sigla;
+    private String versao;
+    private boolean usaKafka;
 }

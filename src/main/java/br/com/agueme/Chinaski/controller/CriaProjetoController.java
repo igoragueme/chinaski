@@ -1,7 +1,7 @@
 package br.com.agueme.Chinaski.controller;
 
 import br.com.agueme.Chinaski.domain.CriarProjetoUseCase;
-import br.com.agueme.Chinaski.domain.DomainException;
+import br.com.agueme.Chinaski.exception.DomainException;
 import br.com.agueme.Chinaski.domain.ProjetoRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

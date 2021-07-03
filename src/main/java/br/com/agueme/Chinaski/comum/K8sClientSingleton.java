@@ -3,11 +3,11 @@ package br.com.agueme.Chinaski.comum;
 import io.fabric8.kubernetes.client.DefaultKubernetesClient;
 import io.fabric8.kubernetes.client.KubernetesClient;
 
-public final class K8sClient {
+public final class K8sClientSingleton {
 
     private static KubernetesClient kubernetesClient;
 
-    private K8sClient(){
+    private K8sClientSingleton(){
     }
 
     public static KubernetesClient getInstance(){
